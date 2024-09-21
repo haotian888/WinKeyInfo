@@ -1,0 +1,139 @@
+﻿<pu:WindowX x:Class="WinKeyInfo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WinKeyInfo"
+        xmlns:pu="clr-namespace:Panuon.UI.Silver;assembly=Panuon.UI.Silver"
+        mc:Ignorable="d"
+        Title="WinKeyInfo V1.0 Powerd By Chinese HaoTian" Height="800" Width="1000" pu:WindowXCaption.Foreground="Red" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <Style TargetType="Label">
+            <Setter Property="HorizontalAlignment" Value="Center"></Setter>
+            <Setter Property="VerticalAlignment" Value="Center"></Setter>
+            <Setter Property="FontSize" Value="15"></Setter>
+            <Setter Property="Foreground" Value="#009BFF"></Setter>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="HorizontalAlignment" Value="Center"></Setter>
+            <Setter Property="VerticalAlignment" Value="Center"></Setter>
+            <Setter Property="FontSize" Value="15"></Setter>
+            <Setter Property="Foreground" Value="#009BFF"></Setter>
+            <Setter Property="BorderThickness" Value="0"></Setter>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+            <ColumnDefinition Width="8*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Label Content="处理器:" Name="CPUTitle"></Label>
+                <Separator VerticalAlignment="Bottom" />
+            </Grid>
+            <Grid Grid.Row="1">
+                <Label Content="显卡:" Name="GPUTitle"></Label>
+                <Separator VerticalAlignment="Bottom" />
+            </Grid>
+            <Grid Grid.Row="2">
+                <Label Content="内存条:" Name="RAMTitle"></Label>
+                <Separator VerticalAlignment="Bottom" />
+            </Grid>
+            <Grid Grid.Row="3">
+                <Label Content="硬盘:" Name="DiskDriveTitle"></Label>
+                <Separator VerticalAlignment="Bottom" />
+            </Grid>
+            <Grid Grid.Row="4">
+                <Label Content="主板:" Name="BaseBoardTitle"></Label>
+                <Separator VerticalAlignment="Bottom" />
+            </Grid>
+            <Grid Grid.Row="5">
+                <Label Content="声卡:" Name="SoundDeviceTitle"></Label>
+                <Separator VerticalAlignment="Bottom" />
+            </Grid>
+            <Grid Grid.Row="6">
+                <Label Content="显示器:" Name="DisplayTitle"></Label>
+                <Separator VerticalAlignment="Bottom" />
+            </Grid>
+            <Grid Grid.Row="7">
+                <Label Content="电池:" Name="BatteryTitle"></Label>
+                <Separator VerticalAlignment="Bottom" />
+            </Grid>
+            <Grid Grid.Row="8">
+                <Menu x:Name="MenuCustom"
+                            pu:MenuHelper.SubmenuCornerRadius="5"
+                      FontSize="10">
+                    <MenuItem Header="Options"
+                              Margin="5"
+                                    Icon="&#xf0ca;">
+                        <MenuItem Header="Language"
+                                    Icon="&#xf1ab;">
+                            <MenuItem Header="CN" Icon="&#xf1ab;" Name="CN"/>
+                            <MenuItem Header="EN" Icon="&#xf1ab;" Name="EN"/>
+                        </MenuItem>
+                        <MenuItem Header="About the project" Icon="&#xf09b;" Name="About"></MenuItem>
+                    </MenuItem>
+                </Menu>
+            </Grid>
+        </Grid>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <TextBox Text="读取中" Name="CPUValue" IsReadOnly="True"></TextBox>
+                <Separator VerticalAlignment="Bottom" />
+            </Grid>
+
+            <Grid Grid.Row="1">
+                <TextBox Text="读取中" Name="GPUValue" IsReadOnly="True"></TextBox>
+                <Separator VerticalAlignment="Bottom" />
+            </Grid>
+            <Grid Grid.Row="2">
+                <TextBox Text="读取中" Name="RAMValue" IsReadOnly="True"></TextBox>
+                <Separator VerticalAlignment="Bottom" />
+            </Grid>
+            <Grid Grid.Row="3">
+                <TextBox Text="读取中" Name="DiskDriveValue" IsReadOnly="True"></TextBox>
+                <Separator VerticalAlignment="Bottom" />
+            </Grid>
+            <Grid Grid.Row="4">
+                <TextBox Text="读取中" Name="BaseBoardValue" IsReadOnly="True"></TextBox>
+                <Separator VerticalAlignment="Bottom" />
+            </Grid>
+            <Grid Grid.Row="5">
+                <TextBox Text="读取中" Name="SoundDeviceValue" IsReadOnly="True"></TextBox>
+                <Separator VerticalAlignment="Bottom" />
+            </Grid>
+            <Grid Grid.Row="6">
+                <TextBox Text="读取中" Name="DisplayValue" IsReadOnly="True"></TextBox>
+                <Separator VerticalAlignment="Bottom" />
+            </Grid>
+            <Grid Grid.Row="7">
+                <TextBox Text="读取中" Name="BatteryValue" IsReadOnly="True"></TextBox>
+                <Separator VerticalAlignment="Bottom" />
+            </Grid>
+            <Grid Grid.Row="8"></Grid>
+        </Grid>
+    </Grid>
+</pu:WindowX>
