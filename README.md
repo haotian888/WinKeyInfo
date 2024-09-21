@@ -7,7 +7,8 @@
 
 CN:Windows硬件参数读取,体积小,速度快
 
-![image](https://github.com/user-attachments/assets/e1b89a33-d63c-4489-8fbc-09dadcf4f6ad)
+![image](https://github.com/user-attachments/assets/6cca2e8a-1049-4d12-b131-c29339801514)
+
 
 
 
@@ -17,7 +18,8 @@ CN:Windows硬件参数读取,体积小,速度快
 
 EN:Windows hardware parameter reading, small size, fast speed
 
-![image](https://github.com/user-attachments/assets/15c7153f-72e3-473f-a310-52537a5ad3a5)
+![image](https://github.com/user-attachments/assets/37f98be8-e1cb-4e99-b272-f53b23e319a5)
+
 
 
 
